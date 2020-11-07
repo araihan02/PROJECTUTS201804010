@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+
+    android:orientation="vertical"
+    android:background="@color/colorBghome2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15px"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raihan Cafe"
+        style="@style/TextLogo"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@color/colorBorder" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="30px">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang "/>
+    <TextView
+        android:id="@+id/tampil_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_makanan"
+            style="@style/ButtonHome"
+            android:text="Makanan"/>
+        <Button
+            android:id="@+id/btn_minuman"
+            style="@style/ButtonHome"
+            android:text="Minuman"/>
+        <Button
+            android:id="@+id/btn_about"
+            style="@style/ButtonHome"
+            android:text="Tentang Cafe"/>
+    </LinearLayout>
+</LinearLayout>
