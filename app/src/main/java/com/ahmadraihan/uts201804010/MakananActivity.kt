@@ -17,12 +17,12 @@ class MakananActivity : AppCompatActivity() {
         rvMakanan.setHasFixedSize(true)
 
         list.addAll(DataMakanan.listData)
-        showRecyclerViewListMode()
-
+        showRecyclerViewCardMode()
     }
-    private fun showRecyclerViewListMode(){
+
+    private fun showRecyclerViewCardMode(){
         rvMakanan.layoutManager = LinearLayoutManager(this)
-        val listMakananAdapter = ListMakananAdapter(list)
-        rvMakanan.adapter = listMakananAdapter
+        val cardMakananAdapter = CardMakananAdapter(list)
+        rvMakanan.adapter = cardMakananAdapter
     }
 }

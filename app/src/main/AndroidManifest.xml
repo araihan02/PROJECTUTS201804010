@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Pesanan"/>
         <activity android:name=".AboutActivity"/>
         <activity android:name=".MinumanActivity"/>
         <activity android:name=".MakananActivity"/>

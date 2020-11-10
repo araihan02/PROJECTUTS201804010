@@ -17,12 +17,11 @@ class MinumanActivity : AppCompatActivity() {
         rvMinuman.setHasFixedSize(true)
 
         list.addAll(DataMinuman.listData)
-        showRecyclerViewListMode()
-
+        showRecyclerViewCardMode()
     }
-    private fun showRecyclerViewListMode(){
+    private fun showRecyclerViewCardMode(){
         rvMinuman.layoutManager = LinearLayoutManager(this)
-        val listMinumanAdapter = ListMinumanAdapter(list)
-        rvMinuman.adapter = listMinumanAdapter
+        val cardMinumanAdapter = CardMinumanAdapter(list)
+        rvMinuman.adapter = cardMinumanAdapter
     }
 }
